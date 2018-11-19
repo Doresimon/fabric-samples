@@ -11,11 +11,14 @@ to a user group called 'docker'.
 // add current user to docker group
 > sudo usermod -aG docker $USER
 
+// refresh info
+> newgrp docker
+
 // restart
 > sudo systemctl restart docker
 
-// refresh info
-> newgrp docker
+// restart computer...
+
 
 ## shell
 
