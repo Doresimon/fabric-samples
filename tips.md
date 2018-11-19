@@ -8,6 +8,8 @@
 
 > sudo systemctl restart docker
 
+> newgrp docker
+
 ## shell
 
 > xxx 2>>&1 | tee xxx.output
