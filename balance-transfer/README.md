@@ -125,6 +125,14 @@ curl -s -X POST \
 	"channelName":"mychannel",
 	"channelConfigPath":"../artifacts/channel/mychannel.tx"
 }'
+curl -s -X POST \
+  http://localhost:4000/channels \
+  -H "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDI3NDQ2NjMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDI3MDg2NjN9.CZtyf7DSs_zygYP8GzCHxsAIze2kZvxHPuWZA2WkZeE" \
+  -H "content-type: application/json" \
+  -d '{
+	"channelName":"mychannel",
+	"channelConfigPath":"../artifacts/channel/mychannel.tx"
+}'
 ```
 
 Please note that the Header **authorization** must contain the JWT returned from the `POST /users` call

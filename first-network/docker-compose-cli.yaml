@@ -91,3 +91,9 @@ services:
       - peer1.org2.example.com
     networks:
       - byfn
+    # extra_hosts: 
+    #   - "orderer.example.com:10.174.13.185" 
+    #   - "peer0.org1.example.com:10.51.120.220" 
+    #   - "peer1.org1.example.com:10.51.126.19" 
+    #   - "peer0.org2.example.com:10.51.116.133" 
+    #   - "peer1.org2.example.com:10.51.126.5"
